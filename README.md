@@ -34,7 +34,7 @@ Creare un carosello. Se non avete fantasia potete copiare l'immagine allegata (�
 può essere d'aiuto
 
 *Milestone 0:*
-Come visto a lezione, focalizziamoci prima sulla creazione del markup statico: costruiamo il container e inseriamo l'immagine grande in modo da poter stilare lo slider.
+ Come visto a lezione, focalizziamoci prima sulla creazione del markup statico: costruiamo il container e inseriamo l'immagine grande in modo da poter stilare lo slider.
 
 *Milestone 1:*
 Ora rimuoviamo i contenuti statici e usiamo l’array di oggetti letterali per popolare dinamicamente il carosello.
@@ -56,8 +56,22 @@ Aggiungere bottoni di start/stop e di inversione del meccanismo di autoplay.
 
 *|SOLUZIONE|*
 
-1.-
+*MILESTONE 0*
+1.-Creo un container principale per lo slider
+1.1.-Inserisco l'immagine all'interno del contenitore più grande
 
-2.-
+2.-Creo i contenitori più piccoli
+2.1.-Inserisco le immagini nei contenitori
 
-3.-
+*MILESTONE 1*
+3.-Rimuovo le immagini dal file HTML e lascio solo il contenitore vuoto
+3.1.-Al loro posto, aggiungo gli oggetti presenti nell'array
+
+4.-Creo le frecce che al click permettono all'utente di navigare tra le immagini
+4.1.-Creo una funzione su js che aggiorni l'immagine al click
+
+*MILESTONE 2*
+5.-Implemento il ciclo infinito del carosello
+5.1.-Modifico la funzione delle frecce per gestire il ciclo infinito
+5.1.1.-Se l'immagine selezionata è la prima, cliccando verso sinistra, l'ultima immagine diventa l'attiva
+5.1.2.-Se l'immagine selezionata è l'ultima, cliccando verso destra, la prima immagine diventa l'attiva
