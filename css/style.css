@@ -8,6 +8,7 @@
     max-width: 900px;
     height: 500px;
     margin: 20px auto;
+    position: relative;
 }
 
 .card{
@@ -27,4 +28,29 @@ img{
     bottom: 20px;
     color: white;
     text-align: end;
+}
+
+.btn-sx{
+    top: 45%;
+    left: 10px;
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-dx{
+    top: 45%;
+    right: 10px;
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.fa-solid{
+    font-size: 35px;
+    color: white;
 }
