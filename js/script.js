@@ -39,7 +39,6 @@ container.innerHTML += `<div class="card d-none">
 const card = document.querySelectorAll('.card');
 
 //Recuepro le costanti dei bottoni
-const btn_sx = document.querySelector('.btn-sx');
 const btn_dx = document.querySelector('.btn-dx');
 
 //Creo la variabile per l'elelemento attivo
@@ -54,6 +53,20 @@ btn_dx.addEventListener('click', function(){
     }
     else{
        active++; 
+    }
+    card[active].classList.remove('d-none');
+});
+
+//Recuepro le costanti dei bottoni
+const btn_sx = document.querySelector('.btn-sx');
+
+btn_sx.addEventListener('click', function(){
+    card[active].classList.add('d-none');
+    if(active === 0){
+        active = images.length - 1;
+    }
+    else{
+       active--; 
     }
     card[active].classList.remove('d-none');
 });
