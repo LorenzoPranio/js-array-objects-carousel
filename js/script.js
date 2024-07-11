@@ -21,3 +21,22 @@ const images = [
         text: 'Marvel\'s Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.',
     }
 ];
+
+//Rimuovo le immagini dal file HTML e lascio solo il contenitore vuoto
+const container = document.querySelector('.container');
+images.forEach((el) => {
+container.innerHTML += `<div class="card">
+<img src="${el.image}" alt="Miles Morales">
+<div class="text">
+    <h2>${el.title}</h2>
+    <p>${el.text}</p>
+</div>
+</div>`
+})
+
+
+
+
+
+
+
