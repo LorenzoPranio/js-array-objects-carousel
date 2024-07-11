@@ -54,3 +54,7 @@ img{
     font-size: 35px;
     color: white;
 }
+
+.d-none{
+    display: none;
+}
